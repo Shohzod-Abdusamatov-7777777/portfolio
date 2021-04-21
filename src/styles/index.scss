@@ -1,0 +1,29 @@
+@import "./header";
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/CeraPRO.woff") format("woff");
+}
+@font-face {
+    font-family: "Cera Pro Bold";
+    src: url("../fonts/CeraPRO-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Cera Pro Med";
+    src: url("../fonts/CeraPRO-Medium.woff") format("woff");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cera Pro", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f7f7f7;
+}
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    border-radius: 8px;
+    background: linear-gradient(to top, #3391df,cyan,#3391df,cyan,#3391df,cyan, #3391df,cyan, #007acc);
+}

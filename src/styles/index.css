@@ -1,0 +1,192 @@
+.header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+}
+
+.header__inner {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-family: sans-serif !important;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0 1px #808d93, -1px 0px #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -4px 3px #808d93;
+}
+
+.nav__logo:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__logo svg {
+  margin-bottom: 10px;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    height: calc(100vh - 60px);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .nav__menu li:nth-child(odd) {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    margin: 1rem;
+  }
+  .nav__menu li:nth-child(even) {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+    margin: 1rem;
+  }
+  .nav__menu.active {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .nav__menu.active li {
+    -webkit-transition: 0.3s 0.2s ease-in-out;
+    transition: 0.3s 0.2s ease-in-out;
+    line-height: 1.5;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav__menu li {
+  margin: 0 1.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  color: #fff;
+  list-style-type: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-family: "Cera Pro Med", sans-serif !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__menu li {
+    font-family: 1rem;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.nav__menu li.active {
+  border-bottom: 2px solid cyan;
+  border-top: 2px solid cyan;
+  padding: 0.5rem 1rem;
+  color: cyan;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__menu li.active {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+.menu__icon {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPRO.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cera Pro Bold";
+  src: url("../fonts/CeraPRO-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cera Pro Med";
+  src: url("../fonts/CeraPRO-Medium.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Cera Pro", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3391df), color-stop(cyan), color-stop(#3391df), color-stop(cyan), color-stop(#3391df), color-stop(cyan), color-stop(#3391df), color-stop(cyan), to(#007acc));
+  background: linear-gradient(to top, #3391df, cyan, #3391df, cyan, #3391df, cyan, #3391df, cyan, #007acc);
+}
+/*# sourceMappingURL=index.css.map */

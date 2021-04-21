@@ -153,6 +153,13 @@
   font-size: 1.5rem;
   font-family: sans-serif;
   cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__icon {
+    display: block;
+  }
 }
 
 @font-face {

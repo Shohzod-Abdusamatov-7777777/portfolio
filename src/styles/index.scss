@@ -1,4 +1,5 @@
 @import "./header";
+@import "./home";
 
 @font-face {
     font-family: "Cera Pro";
@@ -18,12 +19,20 @@
     box-sizing: border-box;
     font-family: "Cera Pro", sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
     background: #f7f7f7;
 }
 ::-webkit-scrollbar-thumb {
-    width: 7px;
+    width: 5px;
     border-radius: 8px;
     background: linear-gradient(to top, #3391df,cyan,#3391df,cyan,#3391df,cyan, #3391df,cyan, #007acc);
+}
+.layout-section{
+    padding-top: 60px;
+    width: 100%;
+    overflow: hidden;
 }
